@@ -56,7 +56,7 @@ class GatherList(ProxyList):
 
 
 def grab_list():
-    for PrxClass in (GatherList, SamairList):
+    for PrxClass in (SamairList, GatherList):
         prx = PrxClass()
         prx.scrap()
         for proxy in prx.proxies:
